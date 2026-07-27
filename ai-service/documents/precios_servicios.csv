@@ -1,0 +1,13 @@
+servicio,descripcion,precio_base_usd,unidad,tiempo_entrega_dias,descuento_volumen_porcentaje
+Traducción Manga Estándar,Traducción IA + revisión humana de manga japonés,0.50,por página,2,10
+Traducción Manhwa Estándar,Traducción IA + revisión humana de manhwa coreano,0.45,por página,2,10
+Traducción Premium,Traducción con doble revisión editorial y adaptación cultural avanzada,0.85,por página,4,5
+Edición Visual Básica,Reemplazo de texto en globos con tipografía estándar,0.30,por página,1,15
+Edición Visual Avanzada,Reemplazo de texto con tipografía personalizada y retoque artístico,0.60,por página,3,10
+OCR y Extracción,Extracción de texto de imágenes manga/manhwa,0.15,por página,0.5,20
+Distribución Digital,Publicación en plataforma MangaTech con analytics,50.00,por título/mes,1,0
+Paquete Completo Capítulo,Traducción + edición visual + QA + distribución de un capítulo (20-30 páginas),25.00,por capítulo,3,15
+Paquete Completo Volumen,Traducción + edición + QA + distribución de volumen completo,200.00,por volumen,10,20
+Localización Cultural,Adaptación avanzada de referencias culturales con notas de traductor,0.40,por página,3,5
+Subtitulado Motion Comic,Traducción y sincronización de subtítulos para motion comics,1.50,por minuto,5,10
+Consultoría Editorial,Asesoría personalizada para editoriales sobre estrategia de localización,150.00,por hora,0,0

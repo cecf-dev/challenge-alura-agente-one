@@ -1,0 +1,11 @@
+id_proyecto,titulo,editorial,idioma_original,genero,estado,traductor_asignado,fecha_inicio,fecha_entrega,paginas,progreso_porcentaje
+PRJ-001,Dragon Blade Chronicles,Shueisha,Japonés,Shōnen,En progreso,Carlos Mendoza,2026-01-15,2026-02-28,220,75
+PRJ-002,Moonlight Academy,Kodansha,Japonés,Shōjo,Completado,María López,2025-11-01,2025-12-15,195,100
+PRJ-003,Seoul Hunters,Naver Webtoon,Coreano,Acción,En progreso,Jin-soo Park,2026-02-01,2026-03-15,180,40
+PRJ-004,Cyber Ronin 2099,Square Enix,Japonés,Seinen,En revisión,Yuki Tanaka,2026-01-20,2026-03-01,205,90
+PRJ-005,Sweet Harmony,Shogakukan,Japonés,Josei,Pendiente,Ana Rodríguez,2026-03-01,2026-04-15,175,0
+PRJ-006,Tower of Shadows,Kakao Entertainment,Coreano,Fantasía,En progreso,Diego Herrera,2026-02-10,2026-03-30,250,55
+PRJ-007,Ramen Master,Kodansha,Japonés,Slice of Life,Completado,Carlos Mendoza,2025-10-05,2025-11-20,160,100
+PRJ-008,Phantom Detective,Shueisha,Japonés,Misterio,En progreso,María López,2026-02-15,2026-04-01,210,30
+PRJ-009,K-Pop Revolution,Naver Webtoon,Coreano,Romance,Pendiente,Jin-soo Park,2026-04-01,2026-05-15,190,0
+PRJ-010,Samurai Legacy,Square Enix,Japonés,Histórico,En revisión,Yuki Tanaka,2026-01-10,2026-02-25,230,95

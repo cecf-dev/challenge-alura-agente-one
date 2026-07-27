@@ -1,0 +1,79 @@
+{
+  "plataforma": {
+    "nombre": "MangaTech AI Platform",
+    "version": "3.2.1",
+    "entorno": "produccion",
+    "url_base": "https://app.mangatech-ai.com",
+    "api_version": "v2"
+  },
+  "modelos_ia": {
+    "traduccion": {
+      "nombre": "MangaLLM",
+      "version": "3.2",
+      "idiomas_soportados": ["ja-es", "ko-es", "zh-es", "en-es"],
+      "max_tokens": 4096,
+      "temperatura_default": 0.3,
+      "proveedor_infraestructura": "Oracle Cloud Infrastructure"
+    },
+    "ocr": {
+      "nombre": "MangaOCR",
+      "version": "2.1",
+      "formatos_entrada": ["PNG", "JPG", "WEBP", "TIFF"],
+      "resolucion_minima_dpi": 150,
+      "idiomas_deteccion": ["japonés", "coreano", "chino simplificado", "inglés"]
+    },
+    "edicion_visual": {
+      "nombre": "MangaEdit",
+      "version": "1.8",
+      "funciones": [
+        "Reemplazo de texto en globos",
+        "Ajuste de tipografía automático",
+        "Limpieza de SFX",
+        "Redibujado de áreas editadas"
+      ]
+    }
+  },
+  "infraestructura": {
+    "cloud_provider": "Oracle Cloud Infrastructure (OCI)",
+    "region_principal": "us-ashburn-1",
+    "region_backup": "us-phoenix-1",
+    "compute": {
+      "tipo": "VM.Standard.E4.Flex",
+      "ocpus": 16,
+      "memoria_gb": 128
+    },
+    "gpu": {
+      "tipo": "BM.GPU4.8",
+      "cantidad": 2,
+      "uso": "Entrenamiento y serving de modelos de IA"
+    },
+    "almacenamiento": {
+      "object_storage_bucket": "mangatech-raw-content",
+      "block_storage_gb": 2000,
+      "backup_frecuencia": "diaria"
+    },
+    "base_datos": {
+      "principal": "PostgreSQL 16",
+      "vectorial": "ChromaDB 1.0",
+      "cache": "Redis 7.2"
+    }
+  },
+  "seguridad": {
+    "autenticacion": "OAuth 2.0 + JWT",
+    "encriptacion_datos": "AES-256",
+    "certificado_ssl": "Let's Encrypt (renovación automática)",
+    "waf": "OCI Web Application Firewall",
+    "backup_retencion_dias": 90
+  },
+  "limites_api": {
+    "requests_por_minuto": 100,
+    "max_file_size_mb": 50,
+    "max_paginas_por_batch": 500,
+    "timeout_traduccion_segundos": 120
+  },
+  "contacto_soporte_tecnico": {
+    "email": "tech-support@mangatech-ai.com",
+    "slack_channel": "#soporte-tecnico",
+    "sla_respuesta_horas": 4
+  }
+}
