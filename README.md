@@ -249,10 +249,20 @@ newgrp docker
 git clone https://github.com/cecf-dev/challenge-alura-agente-one.git
 cd challenge-alura-agente-one
 
-# Configurar API key
-cp .env.example ai-service/.env
-nano ai-service/.env   # Pegar GROQ_API_KEY
+# Configurar variables de entorno en la raíz
+nano .env
+```
 
+Agregar al archivo `.env`:
+
+```env
+GROQ_API_KEY=gsk_tu-api-key-aqui
+LLM_MODEL=llama-3.3-70b-versatile
+```
+
+> **Importante:** El `.env` va en la raíz del proyecto, no dentro de `ai-service/`. Docker Compose lee las variables de la raíz y las inyecta a los contenedores.
+
+```bash
 # Agregar documentos
 # (copiar archivos a ai-service/documents/)
 
@@ -260,7 +270,17 @@ nano ai-service/.env   # Pegar GROQ_API_KEY
 docker compose up -d --build
 ```
 
-### 3. (Opcional) Nginx + SSL
+### 3. Verificar que funciona
+
+```bash
+# Ver logs
+docker compose logs -f
+
+# Verificar conectividad del contenedor con Groq
+docker compose exec ai-service env | grep GROQ
+```
+
+### 4. (Opcional) Nginx + SSL
 
 ```bash
 sudo apt install -y nginx certbot python3-certbot-nginx
@@ -281,6 +301,12 @@ sudo apt install -y nginx certbot python3-certbot-nginx
 | `DOCUMENTS_DIR` | `documents` | Carpeta de documentos |
 | `CHROMA_PERSIST_DIR` | `chroma_data` | Carpeta de persistencia ChromaDB |
 | `MAX_FILE_SIZE_MB` | `50` | Tamaño máximo de upload |
+
+---
+
+## Demo
+
+https://github.com/cecf-dev/challenge-alura-agente-one/assets/docs/demo.mp4
 
 ---
 
