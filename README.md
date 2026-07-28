@@ -306,9 +306,7 @@ sudo apt install -y nginx certbot python3-certbot-nginx
 
 ## Demo
 
-<video src="https://github.com/cecf-dev/challenge-alura-agente-one/raw/main/docs/demo.mp4" controls width="100%">
-  Tu navegador no soporta video. <a href="https://github.com/cecf-dev/challenge-alura-agente-one/raw/main/docs/demo.mp4">Descargar video</a>
-</video>
+Video de demostración: `docs/demo.mp4`
 
 ---
 
