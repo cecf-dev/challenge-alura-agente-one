@@ -306,7 +306,7 @@ sudo apt install -y nginx certbot python3-certbot-nginx
 
 ## Demo
 
-<video src="ai-service/docs/demo.mp4" controls width="100%"></video>
+<video src="docs/demo.mp4" controls width="100%"></video>
 
 ---
 
