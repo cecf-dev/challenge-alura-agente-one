@@ -306,7 +306,7 @@ sudo apt install -y nginx certbot python3-certbot-nginx
 
 ## Demo
 
-https://github.com/cecf-dev/challenge-alura-agente-one/assets/docs/demo.mp4
+<video src="ai-service/docs/demo.mp4" controls width="100%"></video>
 
 ---
 
